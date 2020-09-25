@@ -44,3 +44,16 @@ const zoomImg = ()=>{
 
 navSlide();
 zoomImg();
+
+const masonry = new Macy({
+    container: '.gallery',
+    mobileFirst: true,
+    columns: 1,
+    breakAt: {
+        600: 3
+    },
+    margin: {
+        x: 20,
+        y: 20,
+    }
+});
